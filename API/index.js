@@ -13,3 +13,4 @@ app.use(express.json());
 app.use(cors());
 app.use("/user",require("./routes/user"));
 app.listen(process.env.PORT,(err)=>err?console.log(error):console.log("server is running"));
+app.get("/",(req,res)=>res.send("Express on Vercel"));
